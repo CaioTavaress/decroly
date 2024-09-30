@@ -1,0 +1,214 @@
+  :root {
+    --cor-texto-biografico: black;
+    --cor-fundo-biografico: white;
+    --cor-texto-complemento: black;
+    --cor-fundo-complemento: white;
+  }
+  
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  body {
+    height: 400vh;
+  }
+  
+  header {
+    width: 100vw;
+    height: 50px;
+    max-height: 60px;
+    display: grid;
+    align-items: center;
+    column-gap: 10px;
+    grid-template-columns: 1fr 3fr 1fr;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 9;
+  }
+    header > h1 {
+      font-family: arial;
+      font-weight: 900;
+      font-size: 1.4em;
+      padding-left: 10px;
+    }
+    
+    header > img {
+      width: 25px;
+    }
+    
+    header > #menu {
+      width: 30px;
+      height: 30px;
+      background: none;
+      display: grid;
+      align-items: center;
+      align-content: space-around;
+    }
+    header > #menu > div {
+      width: 30px;
+      height: 5px;
+      background: black;
+      border-radius: 2px;
+    }
+    
+    
+    .intro > #mestre {
+      grid-area: mestre;
+      font-size: 50px;
+      margin-top: -30px;
+    }
+    .intro > p {
+      grid-area: texto;
+      text-indent: 2.5em;
+    }
+    
+    .intro {
+      width: 95vw;
+      height: auto;
+      margin-left: 2.5vw;
+      margin-top: 16vh;
+      display: grid;
+      grid-template-areas: 'mestre' 'texto' 'texto', 'texto' 'texto' 'texto';   
+      margin-bottom: 10vh;
+    }
+    
+
+  
+  
+  .comentario {
+    width: 95vw;
+    height: 300px;
+    border:.5px solid black;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 5vh;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1.4fr;
+    gap: 10px;
+  }
+  
+    .comentario > #head {
+      display: grid;
+      grid-template-columns: 2fr 8fr 1fr 1fr;
+      margin-top: 5px;
+    }
+    .comentario > #head > img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    .comentario > #head > #nome {
+      margin-top: 3vh;
+      font-size: 1.5em;
+      font-family: arial;
+      text-indent: 0.4em;
+    }
+    .comentario > #head > #nome:after {
+      content:" - Editor(a)";
+      font-size: 14px;
+    }
+    .comentario > #head > div {
+      width: 20px;
+      height: 20px;
+      background: rebeccapurple;
+      border-radius: 25px;
+      margin-top: 5px;
+    }
+   
+   
+   .comentario > #texto {
+     overflow-x: scroll;
+     padding-left: 10px;
+     text-indent: 1em;
+   }
+   
+   .comentario > #menu-comentario {
+     display: grid;
+     height: 40px;
+     grid-template-columns: 1fr 1fr 3fr 5fr;
+     gap: 10px;
+     text-align: center;
+   }
+  
+   .comentario > #menu-comentario > div  {
+     align-items: center;
+     align-content: center;
+   }
+   .comentario > #menu-comentario > #concordo {
+     margin-left: 15px;
+   }
+   .comentario > #menu-comentario > #comentar {
+     background: rebeccapurple;
+     text-align: left;
+     color: white;
+     border-radius: 25px;
+   }
+   .comentario > #menu-comentario > #comentar > img {
+     position: absolute;
+     margin-left: 10px;
+     margin-top: -10px;
+   }
+   .comentario > #menu-comentario > #data {
+     font-size: 0.6em;
+     text-align: center;
+     line-height: 40px;
+     font-family: arial;
+   }
+   
+   
+   
+   .menu {
+     width: 100vw;
+     height: 100vh;
+     position: absolute;
+     backdrop-filter: blur(3px);
+     z-index: 10;
+     top:0;
+     display: none;
+     overflow-x: hidden;
+     overflow-y: hidden;
+   }
+   .menu > #menu-list {
+     width: 95vw;
+     height: 500px;
+     background: white;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     border-radius: 10px;
+     box-shadow: 4px 4px 10px rgba(0,0,0,0.2);    
+   }
+   .menu > #menu-list > #fecha {
+     background: none;
+     font-family: arial;
+     font-weight: 900;
+     position: absolute;
+     left: 75vw;
+     margin-top: 15px;
+     color: black;
+     font-size: 0.9em;
+   }
+   
+   
+   #escrever {
+     position: fixed;
+     width: 100px;
+     height: 40px;
+     background: rgba(49, 217, 40, 1);
+     bottom: 30px;
+     right: 10px;
+     border:none;
+     font-size: 1em;
+     font-family: arial;
+     color: white;
+     font-weight: 900;
+   }
