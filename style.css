@@ -64,6 +64,8 @@
     .intro > p {
       grid-area: texto;
       text-indent: 2.5em;
+      max-width: 600px;
+      min-width: 370px;
     }
     
     .intro {
@@ -81,6 +83,8 @@
   
   .comentario {
     width: 95vw;
+    max-width: 600px;
+    min-width: 370px;
     height: 300px;
     border:.5px solid black;
     border-radius: 10px;
