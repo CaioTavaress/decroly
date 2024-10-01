@@ -225,7 +225,8 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -40%);
+        text-align: center;
+        transform: translate(-50%, -70%);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
