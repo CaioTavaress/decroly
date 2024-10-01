@@ -216,3 +216,14 @@
      color: white;
      font-weight: 900;
    }
+  
+  
+  @media (min-width:1300px){
+  
+       section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+  
+  }
